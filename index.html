@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <script src="main.js"></script>
+</head>
+<style>
+  body {
+    color: white;
+    padding: 0 16px;
+  }
+</style>
+
+<body>
+  <sp-heading>Layers</sp-heading>
+
+  <sp-slider min="0" max="360" value="0" id="direction">
+    <sp-label slot="label">Direction</sp-label>
+  </sp-slider>
+  <!-- <sp-slider min="0" max="100" value="10" id="spacing">
+    <sp-label slot="label">Spacing</sp-label>
+  </sp-slider> -->
+  <sp-textfield placeholder="1" id="spacing">
+    <sp-label isrequired="true" slot="label">Spacing</sp-label>
+  </sp-textfield>
+  <sp-textfield placeholder="2" id="length">
+    <sp-label isrequired="true" slot="label">Length</sp-label>
+  </sp-textfield>
+  <!-- <sp-slider min="0" max="100" value="1" id="length">
+    <sp-label slot="label">Length</sp-label>
+  </sp-slider> -->
+  <sp-button id="preview">Array Preview</sp-button>
+  <footer>
+    <sp-button id="confirm">Confirm</sp-button>
+    <sp-button id="cancel">Cancel</sp-button>
+  </footer>
+</body>
+
+</html>
